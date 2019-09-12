@@ -2,6 +2,7 @@
 /* eslint-disable no-undef */
 const chai = require('chai');
 const chaiHttp = require('chai-http');
+// eslint-disable-next-line node/no-missing-require
 const chaiLike = require('chair-like');
 const app = require('../server');
 

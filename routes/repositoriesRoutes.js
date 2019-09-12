@@ -1,5 +1,5 @@
 const Router = require('express').Router;
-const RepositoryController = require('../controllers/repositoryController')
+const RepositoryController = require('../controllers/repositoryController');
 
 const routes = Router();
 
