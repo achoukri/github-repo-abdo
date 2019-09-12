@@ -1,0 +1,27 @@
+{
+  "name": "github-repo-abdo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha tests/*.test.js --exit",
+    "lint": "eslint .",
+    "dev": "nodemon .",
+    "start": "node ."
+  },
+  "author": "choukri",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "chai-like": "^1.1.1",
+    "eslint": "^6.3.0",
+    "eslint-plugin-mocha": "^6.1.1",
+    "eslint-plugin-node": "^10.0.0",
+    "mocha": "^6.2.0",
+    "nodemon": "^1.19.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

@@ -1,0 +1,14 @@
+{
+    "extends": [
+        "eslint:recommended",
+        "plugin:node/recommended",
+        "plugin:mocha/recommended"
+    ],
+    "plugins": [
+        "mocha"
+    ],
+    "rules": {
+        "semi":"error",
+        "node/no-unpublished-require":"warn"
+    }
+}
