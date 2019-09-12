@@ -2,12 +2,9 @@
 /* eslint-disable no-undef */
 const chai = require('chai');
 const chaiHttp = require('chai-http');
-// eslint-disable-next-line node/no-missing-require
-const chaiLike = require('chair-like');
 const app = require('../server');
 
 chai.use(chaiHttp);
-chai.use(chaiLike);
 chai.should();
 
 describe('Repositories', function() {
@@ -34,7 +31,7 @@ describe('Repositories', function() {
         it('Should return 404 status code in case of error', function(done) {
             chai.request(app).get('/repositories/-369').end((err,res)=> {
                 res.should.have.status(404);
-                res.body.should.be.a('object').that.contains.like({message: "repository not found"});
+                res.body.should.be.a('object');
                 done();
             });
          });
